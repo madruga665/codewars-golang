@@ -3,7 +3,7 @@ package numbertostring
 import "testing"
 
 func TestNumberToString(t *testing.T) {
-	want := "66"
+	want := "665"
 	result := NumberToString(665)
 
 	if want != result {
