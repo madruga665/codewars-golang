@@ -6,6 +6,7 @@ import (
 	"github.com/madruga665/codewars-golang/digitize"
 	"github.com/madruga665/codewars-golang/finduniq"
 	"github.com/madruga665/codewars-golang/numbertostring"
+	"github.com/madruga665/codewars-golang/pascalTriangle"
 	"github.com/madruga665/codewars-golang/positivesum"
 	"github.com/madruga665/codewars-golang/spinwords"
 	"github.com/madruga665/codewars-golang/summation"
@@ -18,6 +19,7 @@ func main() {
 	resultPositiveSum := positivesum.PositiveSum([]int{2, 5, -5, 6})
 	resultNumberToString := numbertostring.NumberToString(665)
 	resultDigitize := digitize.Digitize(665)
+	resultPascalTriangle := pascalTriangle.PascalTriangle(10)
 
 	fmt.Printf("Resultado do Summation: %d \n", resultSummation)
 	fmt.Printf("Resultado do FindUniq: %d \n", resultFindUniq)
@@ -25,4 +27,10 @@ func main() {
 	fmt.Printf("Resultado do PositiveSum: %d \n", resultPositiveSum)
 	fmt.Printf("Resultado do NumberToString: %s \n", resultNumberToString)
 	fmt.Printf("Resultado do resultDigitize: %d \n", resultDigitize)
+	fmt.Println("==================== Triangulo de pascal em go =======================")
+
+	for _, line := range resultPascalTriangle {
+		fmt.Println(line)
+	}
+
 }
